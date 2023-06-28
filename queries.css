@@ -1,0 +1,813 @@
+/* //////////////////////////////////////////////////////////////////////////////// */
+
+@media (max-width: 100em) {
+  .socials__container {
+    position: relative;
+    left: 1rem;
+  }
+
+  .contact__container {
+    position: relative;
+    right: 8rem;
+  }
+}
+
+@media (max-width: 84.25em) {
+  .main-nav-list {
+    gap: 2rem;
+  }
+
+  li {
+    margin-bottom: 2rem;
+  }
+}
+
+@media (max-width: 79.5em) {
+  .about-us {
+    height: 80rem;
+  }
+
+  .slider__container {
+    height: 70rem;
+  }
+
+  .selection {
+    height: 200rem;
+    justify-content: start;
+  }
+
+  .why__us {
+    height: 120rem;
+  }
+
+  .takeaway {
+    margin-bottom: 4rem;
+  }
+
+  .section__contact {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    height: 130rem;
+  }
+
+  .socials__container {
+    flex-direction: row;
+    gap: 2rem;
+    justify-content: center;
+    height: 5rem;
+    left: 0.1rem;
+    font-size: 1.4rem;
+
+    width: 80vw;
+  }
+
+  .social-icons__container {
+    gap: 2rem;
+    width: 20rem;
+  }
+
+  .contact__container {
+    position: relative;
+    right: 0.1rem;
+  }
+
+  .cta-form {
+    grid-template-columns: 1fr;
+  }
+
+  .cta {
+    grid-template-columns: 1fr;
+  }
+
+  .cta-text-box {
+    padding: 3.2rem;
+  }
+
+  .cta-img-box {
+    height: 32rem;
+    grid-row: 1;
+  }
+}
+
+@media (max-width: 68.75em) {
+  .flex-review__container {
+    justify-content: flex-start;
+  }
+
+  .takeaway {
+    margin-bottom: 1rem;
+    /* min-width: 100rem; */
+
+    /* .why__us {
+    height: 100vh;
+  } */
+    justify-content: center;
+  }
+
+  .text__home {
+    font-size: 2rem;
+  }
+
+  .home__heading {
+    font-size: 7.4rem;
+  }
+
+  .why__us {
+    height: 100rem;
+  }
+
+  .takeaway > p {
+    font-size: 1.4rem;
+    margin: 0;
+    max-width: 60vw;
+    align-self: center;
+  }
+
+  .dinner > p {
+    margin: 0;
+  }
+
+  .wifi > p {
+    font-size: 1.4rem;
+  }
+
+  .wifi {
+    height: 20rem;
+  }
+
+  .make__use > p {
+    font-size: 1.4rem;
+  }
+
+  .make__use {
+    height: 20rem;
+  }
+
+  .fazana-location__container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  .locations__section {
+    height: 250rem;
+  }
+
+  .locations__container {
+    height: 220rem;
+  }
+  .map__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .dinner {
+    font-size: 3.6rem;
+  }
+
+  .btn-mobile-nav {
+    display: block;
+    z-index: 9999;
+  }
+
+  .icon-mobile-nav {
+    transition: all 0.4s;
+  }
+
+  .icon-mobile-nav:hover {
+    color: #ffcb31;
+  }
+  .main-nav {
+    background-color: var(--color-brand-4);
+    z-index: 1000;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100vh;
+    transform: translateX(100%);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.5s ease-in;
+
+    /* Hide navigation */
+    /* Allows NO transitions at all */
+    /* display: none; */
+
+    /* 1) Hide it visually */
+    opacity: 0;
+
+    /* 2) Make it unaccessible to mouse and keyboard */
+    pointer-events: none;
+
+    /* 3) Hide it from screen readers */
+    visibility: hidden;
+  }
+
+  .nav-open .main-nav {
+    opacity: 1;
+    pointer-events: auto;
+    visibility: visible;
+    transform: translateX(0);
+  }
+
+  .nav-open .icon-mobile-nav[name="close-outline"] {
+    display: block;
+  }
+
+  .nav-open .icon-mobile-nav[name="menu-outline"] {
+    display: none;
+  }
+
+  .main-nav-list {
+    flex-direction: column;
+    gap: 4.8rem;
+  }
+
+  .main-nav-link:link,
+  .main-nav-link:visited {
+    font-size: 3rem;
+  }
+
+  .only-phone {
+    display: flex;
+    visibility: visible;
+    display: flex;
+    position: relative;
+    left: 1rem;
+    gap: 2rem;
+  }
+
+  h2 {
+    font-size: 6.2rem;
+  }
+}
+
+@media (max-width: 50.68em) {
+  .flex-review__container {
+    flex-direction: column;
+  }
+
+  .styling__div-salad {
+    display: flex;
+    justify-content: center;
+  }
+
+  .meal__mark {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .home {
+    height: 100rem;
+    justify-content: start;
+  }
+  .text__home {
+    font-size: 1.6rem;
+  }
+
+  .home__heading {
+    font-size: 6.2rem;
+  }
+  .home__button__container {
+    flex-direction: column;
+    margin-left: 14rem;
+  }
+
+  h2 {
+    font-size: 5.2rem;
+  }
+
+  .selection {
+    height: 360rem;
+  }
+
+  .marko__img {
+    width: 100%;
+    height: 70%;
+  }
+
+  .about-heading {
+    margin-bottom: 2rem;
+    left: 12rem;
+  }
+
+  .why__us {
+    height: 80rem;
+    justify-content: start;
+  }
+
+  .dinner {
+    font-size: 3.2rem;
+    margin-top: 4rem;
+  }
+
+  .locations__heading {
+    font-size: 4.4rem;
+  }
+
+  .location__heading {
+    font-size: 4.4rem;
+  }
+
+  iframe {
+    width: 65vw;
+  }
+
+  .social-icons__container {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .takeaway > p {
+    max-width: 100vw;
+  }
+
+  .wifi > p {
+    max-width: 100vw;
+    margin: 0;
+  }
+
+  .make__use > p {
+    margin: 0;
+  }
+
+  .about-us {
+    align-items: start;
+    height: 54rem;
+  }
+
+  .btn-mobile-nav {
+    top: 2.5rem;
+    right: 1rem;
+  }
+}
+
+@media (max-width: 39.06em) {
+  .home__heading {
+    font-size: 5.2rem;
+  }
+  h2 {
+    font-size: 4.4rem;
+    text-align: center;
+  }
+
+  .selection-text__container {
+    margin: 0;
+  }
+
+  .about-heading {
+    left: 0.01rem;
+  }
+  .about-us {
+    align-items: flex-end;
+    height: 40rem;
+  }
+
+  .slider__container {
+    height: 40rem;
+  }
+
+  .logo__container {
+    width: 100vw;
+  }
+}
+
+@media (max-width: 34.68em) {
+  .home__container {
+    flex-direction: column-reverse;
+    height: 80rem;
+    width: 100vw;
+  }
+
+  .flex-review__container {
+    justify-self: center;
+    align-self: center;
+    position: relative;
+    left: 6rem !important;
+  }
+
+  .img__container {
+    justify-content: start;
+    gap: 0.01rem;
+    position: relative;
+
+    height: 40rem !important;
+    align-self: center;
+    justify-self: center;
+    align-items: flex-start !important;
+  }
+
+  .review__container {
+    top: 0.01rem;
+  }
+
+  .b-rate__dot {
+    height: 5rem;
+    width: 5rem;
+  }
+
+  .burger {
+    min-width: 250px;
+  }
+
+  .desc__container {
+    width: 40vw;
+  }
+
+  .text__home {
+    position: relative;
+    left: 2rem;
+  }
+
+  .home__heading {
+    font-size: 4.4rem;
+  }
+
+  .wobble-hor-bottom {
+    margin-top: 10rem;
+  }
+
+  .home__button__container {
+    width: 20rem;
+    position: relative;
+    right: 6rem;
+    bottom: 2rem;
+  }
+
+  body {
+    font-size: 1.6rem;
+  }
+
+  .review__text {
+    font-size: 1.4rem;
+  }
+
+  .tripadvisor {
+    max-width: 30px;
+  }
+
+  .desc__container {
+    justify-content: start;
+    position: relative;
+    top: 15rem;
+    width: 50vw;
+  }
+
+  .text__container {
+    position: relative;
+    right: 2rem;
+  }
+  .time {
+    right: 1rem;
+  }
+
+  .home {
+    height: 95rem;
+    justify-content: start;
+  }
+
+  .slider__container {
+    height: 30rem;
+    margin-top: 6rem;
+  }
+
+  .about-us {
+    align-items: start;
+    height: 44rem;
+  }
+
+  .selection-text__container {
+    height: 12rem;
+  }
+
+  h2 {
+    font-size: 3.6rem;
+  }
+
+  .dinner {
+    font-size: 2.4rem;
+
+    top: 1rem;
+  }
+
+  .selection {
+    height: 330rem;
+  }
+
+  .about {
+    align-items: start;
+    height: 50rem;
+  }
+
+  .about__container {
+    height: 50rem;
+  }
+
+  .why__us {
+    height: 90rem;
+    justify-content: center;
+  }
+
+  .locations__heading {
+    margin-bottom: 1rem;
+    font-size: 3.6rem;
+  }
+
+  .locations__container {
+    justify-content: flex-start;
+    align-items: center;
+    height: 180rem;
+  }
+
+  .location__heading {
+    font-size: 3.6rem;
+  }
+
+  .working-hours__title {
+    font-size: 3.6rem;
+  }
+
+  iframe {
+    height: 40rem;
+  }
+
+  .locations__section {
+    height: 205rem;
+    align-items: center;
+    justify-content: flex-start;
+  }
+
+  .locations__heading {
+    margin-top: 4rem;
+  }
+
+  .social-icons__container > p {
+    display: none;
+    visibility: hidden;
+  }
+
+  footer {
+    font-size: 1rem;
+  }
+
+  .locations__container {
+    margin: 0;
+  }
+
+  .locations {
+    left: 1rem;
+  }
+
+  .section__contact {
+    height: 120rem;
+  }
+
+  .home__container {
+    height: 120rem;
+  }
+
+  footer {
+    height: 15rem;
+  }
+
+  .btn-mobile-nav {
+    position: relative;
+    right: 3rem;
+  }
+}
+
+@media (max-width: 30em) {
+  .dinner {
+    font-size: 2rem;
+  }
+
+  .img__container {
+    justify-content: start;
+    gap: 0.01rem;
+    position: relative;
+    right: 6rem;
+    height: 40rem !important;
+  }
+
+  .flex-review__container {
+    position: relative;
+    left: 7rem !important;
+  }
+
+  h2 {
+    font-size: 3rem;
+  }
+
+  .takeaway > p {
+    font-size: 1.2rem;
+  }
+
+  .wifi > p {
+    font-size: 1.2rem;
+  }
+
+  .wifi {
+    height: 20rem;
+  }
+
+  .takeaway {
+    height: 25rem;
+  }
+
+  .make__use > p {
+    font-size: 1.2rem;
+  }
+
+  .why__us {
+    height: 85rem;
+  }
+
+  .contact__container {
+    width: 100vw;
+  }
+
+  .home__heading {
+    font-size: 3.2rem;
+  }
+
+  .styling__div {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+  }
+
+  .meal__mark {
+    bottom: 0.01rem;
+  }
+
+  .desc__container {
+    width: 100vw;
+  }
+
+  .logo__container {
+    height: 10rem;
+  }
+
+  iframe {
+    height: 30rem;
+    border-radius: 12px;
+  }
+
+  .locations__section {
+    height: 185rem;
+  }
+
+  .location__heading {
+    font-size: 3rem;
+  }
+
+  .working-hours__title {
+    font-size: 3rem;
+    margin-bottom: 2rem;
+    position: relative;
+    left: 1.4rem;
+  }
+}
+
+@media (max-width: 23.43em) {
+  h2 {
+    font-size: 2.4rem;
+  }
+
+  .meal__container {
+    width: 25rem;
+    height: 37rem;
+  }
+
+  .styling__div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .meal__description {
+    font-size: 1.2rem;
+    position: relative;
+    bottom: 1.2rem;
+  }
+
+  .selection {
+    height: 280rem;
+  }
+
+  .location__heading {
+    font-size: 2.4rem;
+  }
+  .locations__heading {
+    font-size: 3rem;
+  }
+
+  .working-hours__title {
+    font-size: 2.4rem;
+    position: relative;
+    left: 3.4rem;
+  }
+
+  .takeaway > p {
+    font-size: 1rem;
+  }
+
+  .wifi > p {
+    font-size: 1rem;
+  }
+
+  .make__use > p {
+    font-size: 1rem;
+  }
+  .dinner {
+    margin-top: 0.01rem;
+  }
+
+  .align__phone {
+    margin-top: 4rem;
+  }
+
+  .why__us {
+    height: 80rem;
+  }
+}
+
+@media (max-height: 48.75em) {
+  .dinner {
+    text-align: center;
+  }
+
+  iframe {
+    height: 25rem;
+  }
+
+  .locations__section {
+    height: 168rem;
+  }
+
+  .home {
+    height: 95rem;
+  }
+}
+
+@media only screen and (min-height: 60em) and (max-width: 60em) {
+  .selection {
+    height: 360rem !important;
+  }
+
+  .align__phone {
+    margin-top: 2rem;
+  }
+
+  .locations__heading {
+    margin-bottom: 12rem;
+  }
+
+  .locations__section {
+    height: 250rem;
+  }
+}
+
+@media only screen and (min-height: 60em) and (max-width: 60em) {
+  .about-us {
+    height: 60rem;
+  }
+
+  .selection-text__container {
+    height: 20rem;
+    width: 60rem;
+  }
+
+  .locations__heading {
+    margin-bottom: 25rem;
+    margin-top: 5rem;
+  }
+
+  .locations__section {
+    height: 265rem;
+    justify-content: flex-start;
+  }
+
+  .section__contact {
+    height: 130rem;
+  }
+
+  .about-heading {
+    left: 0.01rem;
+  }
+}
+
+@media (max-height: 55em) {
+  .main-nav-list {
+    gap: 2rem;
+  }
+}

@@ -1,0 +1,782 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Order your favorite food from Piantina" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Piantina</title>
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="/photos/Web/icons8-organic-food-arcade-96.png"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="queries.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="sticky content header">
+      <div class="logo__container">
+        <span class="piantina ripple">Piantina <br /> </span>
+      </div>
+      <nav class="main-nav">
+        <ul class="main-nav-list">
+          <a class="nav__links-main" href="#restourants">Restourants</a>
+
+          <a class="nav__links-main" href="#meals">Meals</a>
+
+          <a class="nav__links-main" href="#about">About us</a>
+
+          <a class="nav__links-main" href="#locations">Locations</a>
+
+          <a class="nav__links-main" href="#contact">Contact us</a>
+
+          <div class="only-phone">
+            <div class="social-icons__container nav__icons">
+              <a href="https://www.facebook.com/piantina.fast.food/">
+                <ion-icon name="logo-facebook" class="social__icon"></ion-icon>
+              </a>
+            </div>
+            <div class="social-icons__container nav__icons">
+              <a href="https://www.instagram.com/piantinafinefast/">
+                <ion-icon name="logo-instagram" class="social__icon"></ion-icon>
+              </a>
+            </div>
+            <div class="social-icons__container nav__icons">
+              <a href="mailto: lukezzi88@gmail.com">
+                <ion-icon name="mail-outline" class="social__icon"></ion-icon>
+              </a>
+            </div>
+          </div>
+
+          <li class="call__container">
+            <a href="tel:091-578-7970" class="nav__icon">
+              <ion-icon class="social__icon" name="call-outline"></ion-icon>
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <div class="btn-mobile-nav">
+        <ion-icon class="icon-mobile-nav" name="menu-outline"></ion-icon>
+        <ion-icon class="icon-mobile-nav" name="close-outline"></ion-icon>
+      </div>
+    </header>
+    <section class="home">
+      <div class="home__container">
+        <div class="desc__container">
+          <div>
+            <h1 class="home__heading">
+              <span class="time"> Time </span>for <br />lunch!
+            </h1>
+          </div>
+          <div class="text__container">
+            <p class="text__home">
+              We'll prepare something special <br />
+              for you. You've earned it.
+            </p>
+          </div>
+
+          <div class="home__button__container">
+            <a
+              class="wolt__link button"
+              href="https://wolt.com/en/hrv/pula/restaurant/piantina"
+            >
+              Order on Wolt
+            </a>
+
+            <a class="wolt__link locations" href="#locations">
+              Locations &#8594;
+            </a>
+          </div>
+        </div>
+        <div class="img__container">
+          <div class="wobble-hor-bottom">
+            <img
+              alt="picture of tasty burger"
+              class="burger"
+              src="./photos/tasty-burger-isolated-white-background-fresh-hamburger-fastfood-with-beef-cheese__1_-removebg-preview-removebg-preview.png"
+            />
+          </div>
+          <div class="flex-review__container">
+            <div class="review__container">
+              <div class="review__text__container">
+                <img
+                  alt="tripadvisor"
+                  class="tripadvisor"
+                  src="./photos/icons8-google-48.png"
+                />
+                <p class="review__text">4.7/5</p>
+              </div>
+              <div class="b-rate__dot">
+                <span class="svg-icon svg-icon-primary svg-icon-2x"
+                  ><!--begin::Svg Icon | path:/var/www/preview.keenthemes.com/keen/releases/2021-04-21-040700/theme/demo2/dist/../src/media/svg/icons/General/Star.svg--><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                    width="24px"
+                    height="24px"
+                    viewBox="0 0 24 24"
+                    version="1.1"
+                  >
+                    <g
+                      stroke="none"
+                      stroke-width="1"
+                      fill="none"
+                      fill-rule="evenodd"
+                    >
+                      <polygon points="0 0 24 0 24 24 0 24" />
+                      <path
+                        d="M12,18 L7.91561963,20.1472858 C7.42677504,20.4042866 6.82214789,20.2163401 6.56514708,19.7274955 C6.46280801,19.5328351 6.42749334,19.309867 6.46467018,19.0931094 L7.24471742,14.545085 L3.94038429,11.3241562 C3.54490071,10.938655 3.5368084,10.3055417 3.92230962,9.91005817 C4.07581822,9.75257453 4.27696063,9.65008735 4.49459766,9.61846284 L9.06107374,8.95491503 L11.1032639,4.81698575 C11.3476862,4.32173209 11.9473121,4.11839309 12.4425657,4.36281539 C12.6397783,4.46014562 12.7994058,4.61977315 12.8967361,4.81698575 L14.9389263,8.95491503 L19.5054023,9.61846284 C20.0519472,9.69788046 20.4306287,10.2053233 20.351211,10.7518682 C20.3195865,10.9695052 20.2170993,11.1706476 20.0596157,11.3241562 L16.7552826,14.545085 L17.5353298,19.0931094 C17.6286908,19.6374458 17.263103,20.1544017 16.7187666,20.2477627 C16.5020089,20.2849396 16.2790408,20.2496249 16.0843804,20.1472858 L12,18 Z"
+                        fill="#000000"
+                      />
+                    </g>
+                  </svg>
+                  <!--end::Svg Icon--></span
+                >
+                <span class="svg-icon svg-icon-primary svg-icon-2x"
+                  ><!--begin::Svg Icon | path:/var/www/preview.keenthemes.com/keen/releases/2021-04-21-040700/theme/demo2/dist/../src/media/svg/icons/General/Star.svg--><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                    width="24px"
+                    height="24px"
+                    viewBox="0 0 24 24"
+                    version="1.1"
+                  >
+                    <g
+                      stroke="none"
+                      stroke-width="1"
+                      fill="none"
+                      fill-rule="evenodd"
+                    >
+                      <polygon points="0 0 24 0 24 24 0 24" />
+                      <path
+                        d="M12,18 L7.91561963,20.1472858 C7.42677504,20.4042866 6.82214789,20.2163401 6.56514708,19.7274955 C6.46280801,19.5328351 6.42749334,19.309867 6.46467018,19.0931094 L7.24471742,14.545085 L3.94038429,11.3241562 C3.54490071,10.938655 3.5368084,10.3055417 3.92230962,9.91005817 C4.07581822,9.75257453 4.27696063,9.65008735 4.49459766,9.61846284 L9.06107374,8.95491503 L11.1032639,4.81698575 C11.3476862,4.32173209 11.9473121,4.11839309 12.4425657,4.36281539 C12.6397783,4.46014562 12.7994058,4.61977315 12.8967361,4.81698575 L14.9389263,8.95491503 L19.5054023,9.61846284 C20.0519472,9.69788046 20.4306287,10.2053233 20.351211,10.7518682 C20.3195865,10.9695052 20.2170993,11.1706476 20.0596157,11.3241562 L16.7552826,14.545085 L17.5353298,19.0931094 C17.6286908,19.6374458 17.263103,20.1544017 16.7187666,20.2477627 C16.5020089,20.2849396 16.2790408,20.2496249 16.0843804,20.1472858 L12,18 Z"
+                        fill="#000000"
+                      />
+                    </g>
+                  </svg>
+                  <!--end::Svg Icon--></span
+                >
+                <span class="svg-icon svg-icon-primary svg-icon-2x"
+                  ><!--begin::Svg Icon | path:/var/www/preview.keenthemes.com/keen/releases/2021-04-21-040700/theme/demo2/dist/../src/media/svg/icons/General/Star.svg--><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                    width="24px"
+                    height="24px"
+                    viewBox="0 0 24 24"
+                    version="1.1"
+                  >
+                    <g
+                      stroke="none"
+                      stroke-width="1"
+                      fill="none"
+                      fill-rule="evenodd"
+                    >
+                      <polygon points="0 0 24 0 24 24 0 24" />
+                      <path
+                        d="M12,18 L7.91561963,20.1472858 C7.42677504,20.4042866 6.82214789,20.2163401 6.56514708,19.7274955 C6.46280801,19.5328351 6.42749334,19.309867 6.46467018,19.0931094 L7.24471742,14.545085 L3.94038429,11.3241562 C3.54490071,10.938655 3.5368084,10.3055417 3.92230962,9.91005817 C4.07581822,9.75257453 4.27696063,9.65008735 4.49459766,9.61846284 L9.06107374,8.95491503 L11.1032639,4.81698575 C11.3476862,4.32173209 11.9473121,4.11839309 12.4425657,4.36281539 C12.6397783,4.46014562 12.7994058,4.61977315 12.8967361,4.81698575 L14.9389263,8.95491503 L19.5054023,9.61846284 C20.0519472,9.69788046 20.4306287,10.2053233 20.351211,10.7518682 C20.3195865,10.9695052 20.2170993,11.1706476 20.0596157,11.3241562 L16.7552826,14.545085 L17.5353298,19.0931094 C17.6286908,19.6374458 17.263103,20.1544017 16.7187666,20.2477627 C16.5020089,20.2849396 16.2790408,20.2496249 16.0843804,20.1472858 L12,18 Z"
+                        fill="#000000"
+                      />
+                    </g>
+                  </svg>
+                  <!--end::Svg Icon--></span
+                >
+                <span class="svg-icon svg-icon-primary svg-icon-2x"
+                  ><!--begin::Svg Icon | path:/var/www/preview.keenthemes.com/keen/releases/2021-04-21-040700/theme/demo2/dist/../src/media/svg/icons/General/Star.svg--><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                    width="24px"
+                    height="24px"
+                    viewBox="0 0 24 24"
+                    version="1.1"
+                  >
+                    <g
+                      stroke="none"
+                      stroke-width="1"
+                      fill="none"
+                      fill-rule="evenodd"
+                    >
+                      <polygon points="0 0 24 0 24 24 0 24" />
+                      <path
+                        d="M12,18 L7.91561963,20.1472858 C7.42677504,20.4042866 6.82214789,20.2163401 6.56514708,19.7274955 C6.46280801,19.5328351 6.42749334,19.309867 6.46467018,19.0931094 L7.24471742,14.545085 L3.94038429,11.3241562 C3.54490071,10.938655 3.5368084,10.3055417 3.92230962,9.91005817 C4.07581822,9.75257453 4.27696063,9.65008735 4.49459766,9.61846284 L9.06107374,8.95491503 L11.1032639,4.81698575 C11.3476862,4.32173209 11.9473121,4.11839309 12.4425657,4.36281539 C12.6397783,4.46014562 12.7994058,4.61977315 12.8967361,4.81698575 L14.9389263,8.95491503 L19.5054023,9.61846284 C20.0519472,9.69788046 20.4306287,10.2053233 20.351211,10.7518682 C20.3195865,10.9695052 20.2170993,11.1706476 20.0596157,11.3241562 L16.7552826,14.545085 L17.5353298,19.0931094 C17.6286908,19.6374458 17.263103,20.1544017 16.7187666,20.2477627 C16.5020089,20.2849396 16.2790408,20.2496249 16.0843804,20.1472858 L12,18 Z"
+                        fill="#000000"
+                      />
+                    </g>
+                  </svg>
+                  <!--end::Svg Icon--></span
+                >
+                <span class="svg-icon svg-icon-primary svg-icon-2x"
+                  ><!--begin::Svg Icon | path:/var/www/preview.keenthemes.com/keen/releases/2021-04-21-040700/theme/demo2/dist/../src/media/svg/icons/General/Star.svg--><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                    width="24px"
+                    height="24px"
+                    viewBox="0 0 24 24"
+                    version="1.1"
+                  >
+                    <g
+                      stroke="none"
+                      stroke-width="1"
+                      fill="none"
+                      fill-rule="evenodd"
+                    >
+                      <polygon points="0 0 24 0 24 24 0 24" />
+                      <path
+                        d="M12,18 L7.91561963,20.1472858 C7.42677504,20.4042866 6.82214789,20.2163401 6.56514708,19.7274955 C6.46280801,19.5328351 6.42749334,19.309867 6.46467018,19.0931094 L7.24471742,14.545085 L3.94038429,11.3241562 C3.54490071,10.938655 3.5368084,10.3055417 3.92230962,9.91005817 C4.07581822,9.75257453 4.27696063,9.65008735 4.49459766,9.61846284 L9.06107374,8.95491503 L11.1032639,4.81698575 C11.3476862,4.32173209 11.9473121,4.11839309 12.4425657,4.36281539 C12.6397783,4.46014562 12.7994058,4.61977315 12.8967361,4.81698575 L14.9389263,8.95491503 L19.5054023,9.61846284 C20.0519472,9.69788046 20.4306287,10.2053233 20.351211,10.7518682 C20.3195865,10.9695052 20.2170993,11.1706476 20.0596157,11.3241562 L16.7552826,14.545085 L17.5353298,19.0931094 C17.6286908,19.6374458 17.263103,20.1544017 16.7187666,20.2477627 C16.5020089,20.2849396 16.2790408,20.2496249 16.0843804,20.1472858 L12,18 Z"
+                        fill="#000000"
+                      />
+                    </g>
+                  </svg>
+                  <!--end::Svg Icon--></span
+                >
+              </div>
+            </div>
+            <div class="review__container">
+              <div class="review__text__container">
+                <img
+                  alt="picture of trip advisor"
+                  class="tripadvisor"
+                  src="./photos/tripadvisor.svg"
+                />
+                <p class="review__text">4.5/5</p>
+              </div>
+              <div class="b-rate__dot">
+                <span class="svg-icon svg-icon-primary svg-icon-2x"
+                  ><!--begin::Svg Icon | path:/var/www/preview.keenthemes.com/keen/releases/2021-04-21-040700/theme/demo2/dist/../src/media/svg/icons/General/Star.svg--><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                    width="24px"
+                    height="24px"
+                    viewBox="0 0 24 24"
+                    version="1.1"
+                  >
+                    <g
+                      stroke="none"
+                      stroke-width="1"
+                      fill="none"
+                      fill-rule="evenodd"
+                    >
+                      <polygon points="0 0 24 0 24 24 0 24" />
+                      <path
+                        d="M12,18 L7.91561963,20.1472858 C7.42677504,20.4042866 6.82214789,20.2163401 6.56514708,19.7274955 C6.46280801,19.5328351 6.42749334,19.309867 6.46467018,19.0931094 L7.24471742,14.545085 L3.94038429,11.3241562 C3.54490071,10.938655 3.5368084,10.3055417 3.92230962,9.91005817 C4.07581822,9.75257453 4.27696063,9.65008735 4.49459766,9.61846284 L9.06107374,8.95491503 L11.1032639,4.81698575 C11.3476862,4.32173209 11.9473121,4.11839309 12.4425657,4.36281539 C12.6397783,4.46014562 12.7994058,4.61977315 12.8967361,4.81698575 L14.9389263,8.95491503 L19.5054023,9.61846284 C20.0519472,9.69788046 20.4306287,10.2053233 20.351211,10.7518682 C20.3195865,10.9695052 20.2170993,11.1706476 20.0596157,11.3241562 L16.7552826,14.545085 L17.5353298,19.0931094 C17.6286908,19.6374458 17.263103,20.1544017 16.7187666,20.2477627 C16.5020089,20.2849396 16.2790408,20.2496249 16.0843804,20.1472858 L12,18 Z"
+                        fill="#000000"
+                      />
+                    </g>
+                  </svg>
+                  <!--end::Svg Icon--></span
+                >
+                <span class="svg-icon svg-icon-primary svg-icon-2x"
+                  ><!--begin::Svg Icon | path:/var/www/preview.keenthemes.com/keen/releases/2021-04-21-040700/theme/demo2/dist/../src/media/svg/icons/General/Star.svg--><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                    width="24px"
+                    height="24px"
+                    viewBox="0 0 24 24"
+                    version="1.1"
+                  >
+                    <g
+                      stroke="none"
+                      stroke-width="1"
+                      fill="none"
+                      fill-rule="evenodd"
+                    >
+                      <polygon points="0 0 24 0 24 24 0 24" />
+                      <path
+                        d="M12,18 L7.91561963,20.1472858 C7.42677504,20.4042866 6.82214789,20.2163401 6.56514708,19.7274955 C6.46280801,19.5328351 6.42749334,19.309867 6.46467018,19.0931094 L7.24471742,14.545085 L3.94038429,11.3241562 C3.54490071,10.938655 3.5368084,10.3055417 3.92230962,9.91005817 C4.07581822,9.75257453 4.27696063,9.65008735 4.49459766,9.61846284 L9.06107374,8.95491503 L11.1032639,4.81698575 C11.3476862,4.32173209 11.9473121,4.11839309 12.4425657,4.36281539 C12.6397783,4.46014562 12.7994058,4.61977315 12.8967361,4.81698575 L14.9389263,8.95491503 L19.5054023,9.61846284 C20.0519472,9.69788046 20.4306287,10.2053233 20.351211,10.7518682 C20.3195865,10.9695052 20.2170993,11.1706476 20.0596157,11.3241562 L16.7552826,14.545085 L17.5353298,19.0931094 C17.6286908,19.6374458 17.263103,20.1544017 16.7187666,20.2477627 C16.5020089,20.2849396 16.2790408,20.2496249 16.0843804,20.1472858 L12,18 Z"
+                        fill="#000000"
+                      />
+                    </g>
+                  </svg>
+                  <!--end::Svg Icon--></span
+                >
+                <span class="svg-icon svg-icon-primary svg-icon-2x"
+                  ><!--begin::Svg Icon | path:/var/www/preview.keenthemes.com/keen/releases/2021-04-21-040700/theme/demo2/dist/../src/media/svg/icons/General/Star.svg--><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                    width="24px"
+                    height="24px"
+                    viewBox="0 0 24 24"
+                    version="1.1"
+                  >
+                    <g
+                      stroke="none"
+                      stroke-width="1"
+                      fill="none"
+                      fill-rule="evenodd"
+                    >
+                      <polygon points="0 0 24 0 24 24 0 24" />
+                      <path
+                        d="M12,18 L7.91561963,20.1472858 C7.42677504,20.4042866 6.82214789,20.2163401 6.56514708,19.7274955 C6.46280801,19.5328351 6.42749334,19.309867 6.46467018,19.0931094 L7.24471742,14.545085 L3.94038429,11.3241562 C3.54490071,10.938655 3.5368084,10.3055417 3.92230962,9.91005817 C4.07581822,9.75257453 4.27696063,9.65008735 4.49459766,9.61846284 L9.06107374,8.95491503 L11.1032639,4.81698575 C11.3476862,4.32173209 11.9473121,4.11839309 12.4425657,4.36281539 C12.6397783,4.46014562 12.7994058,4.61977315 12.8967361,4.81698575 L14.9389263,8.95491503 L19.5054023,9.61846284 C20.0519472,9.69788046 20.4306287,10.2053233 20.351211,10.7518682 C20.3195865,10.9695052 20.2170993,11.1706476 20.0596157,11.3241562 L16.7552826,14.545085 L17.5353298,19.0931094 C17.6286908,19.6374458 17.263103,20.1544017 16.7187666,20.2477627 C16.5020089,20.2849396 16.2790408,20.2496249 16.0843804,20.1472858 L12,18 Z"
+                        fill="#000000"
+                      />
+                    </g>
+                  </svg>
+                  <!--end::Svg Icon--></span
+                >
+                <span class="svg-icon svg-icon-primary svg-icon-2x"
+                  ><!--begin::Svg Icon | path:/var/www/preview.keenthemes.com/keen/releases/2021-04-21-040700/theme/demo2/dist/../src/media/svg/icons/General/Star.svg--><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                    width="24px"
+                    height="24px"
+                    viewBox="0 0 24 24"
+                    version="1.1"
+                  >
+                    <g
+                      stroke="none"
+                      stroke-width="1"
+                      fill="none"
+                      fill-rule="evenodd"
+                    >
+                      <polygon points="0 0 24 0 24 24 0 24" />
+                      <path
+                        d="M12,18 L7.91561963,20.1472858 C7.42677504,20.4042866 6.82214789,20.2163401 6.56514708,19.7274955 C6.46280801,19.5328351 6.42749334,19.309867 6.46467018,19.0931094 L7.24471742,14.545085 L3.94038429,11.3241562 C3.54490071,10.938655 3.5368084,10.3055417 3.92230962,9.91005817 C4.07581822,9.75257453 4.27696063,9.65008735 4.49459766,9.61846284 L9.06107374,8.95491503 L11.1032639,4.81698575 C11.3476862,4.32173209 11.9473121,4.11839309 12.4425657,4.36281539 C12.6397783,4.46014562 12.7994058,4.61977315 12.8967361,4.81698575 L14.9389263,8.95491503 L19.5054023,9.61846284 C20.0519472,9.69788046 20.4306287,10.2053233 20.351211,10.7518682 C20.3195865,10.9695052 20.2170993,11.1706476 20.0596157,11.3241562 L16.7552826,14.545085 L17.5353298,19.0931094 C17.6286908,19.6374458 17.263103,20.1544017 16.7187666,20.2477627 C16.5020089,20.2849396 16.2790408,20.2496249 16.0843804,20.1472858 L12,18 Z"
+                        fill="#000000"
+                      />
+                    </g>
+                  </svg>
+                  <!--end::Svg Icon--></span
+                >
+                <span class="svg-icon svg-icon-primary svg-icon-2x"
+                  ><!--begin::Svg Icon | path:/var/www/preview.keenthemes.com/keen/releases/2021-04-21-040700/theme/demo2/dist/../src/media/svg/icons/General/Half-star.svg--><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                    width="24px"
+                    height="24px"
+                    viewBox="0 0 24 24"
+                    version="1.1"
+                  >
+                    <g
+                      stroke="none"
+                      stroke-width="1"
+                      fill="none"
+                      fill-rule="evenodd"
+                    >
+                      <polygon points="0 0 24 0 24 24 0 24" />
+                      <path
+                        d="M12,4.25932872 C12.1488635,4.25921584 12.3000368,4.29247316 12.4425657,4.36281539 C12.6397783,4.46014562 12.7994058,4.61977315 12.8967361,4.81698575 L14.9389263,8.95491503 L19.5054023,9.61846284 C20.0519472,9.69788046 20.4306287,10.2053233 20.351211,10.7518682 C20.3195865,10.9695052 20.2170993,11.1706476 20.0596157,11.3241562 L16.7552826,14.545085 L17.5353298,19.0931094 C17.6286908,19.6374458 17.263103,20.1544017 16.7187666,20.2477627 C16.5020089,20.2849396 16.2790408,20.2496249 16.0843804,20.1472858 L12,18 L12,4.25932872 Z"
+                        fill="#000000"
+                        opacity="0.3"
+                      />
+                      <path
+                        d="M12,4.25932872 L12,18 L7.91561963,20.1472858 C7.42677504,20.4042866 6.82214789,20.2163401 6.56514708,19.7274955 C6.46280801,19.5328351 6.42749334,19.309867 6.46467018,19.0931094 L7.24471742,14.545085 L3.94038429,11.3241562 C3.54490071,10.938655 3.5368084,10.3055417 3.92230962,9.91005817 C4.07581822,9.75257453 4.27696063,9.65008735 4.49459766,9.61846284 L9.06107374,8.95491503 L11.1032639,4.81698575 C11.277344,4.464261 11.6315987,4.25960807 12,4.25932872 Z"
+                        fill="#000000"
+                      />
+                    </g>
+                  </svg>
+                  <!--end::Svg Icon--></span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="restourants" class="about-us section">
+      <div class="slider__container">
+        <div id="slider">
+          <figure>
+            <img alt="image of piantina food" src="./photos/Piantina1.jpg" />
+            <img alt="image of piantina food" src="./photos/Piantina6.jpg" />
+            <img alt="image of piantina food" src="./photos/Piantina7.jpg" />
+            <img alt="image of piantina food" src="./photos//Piantina4.jpg" />
+            <img alt="image of piantina food" src="./photos//Piantina9.jpg" />
+          </figure>
+        </div>
+      </div>
+    </section>
+    <section class="selection section" id="meals">
+      <div class="selection-text__container">
+        <h2>
+          Meals carefully<br />
+          selected by Piantina
+        </h2>
+      </div>
+      <div class="meals__container">
+        <div class="meal__container">
+          <div class="meal-img__container">
+            <img
+              alt="image of burger"
+              class="meal__img"
+              src="./photos/pexels-valeria-boltneva-1251198 (1) -min.jpg"
+            />
+          </div>
+          <div class="meal-heading__container">
+            <div class="styling__div">
+              <span class="meal__mark">BURGER</span>
+            </div>
+            <h4>Italiano</h4>
+          </div>
+          <div class="ingrideints__container">
+            <ion-icon name="layers-outline" class="ingredient__icon"></ion-icon>
+            <span class="meal__description"
+              >100% baby beef, cheedar, pork neck, caramelised onions, iceberg
+              lettuce, peppercorn sauce, potato wedges</span
+            >
+          </div>
+        </div>
+        <div class="meal__container">
+          <div class="meal-img__container">
+            <img
+              alt="image of burger"
+              class="meal__img"
+              src="./photos/Smoker-2-min.jpg"
+            />
+          </div>
+          <div class="meal-heading__container">
+            <div class="styling__div">
+              <span class="meal__mark">BURGER</span>
+            </div>
+            <h4>Smoker</h4>
+          </div>
+          <div class="ingrideints__container">
+            <ion-icon name="layers-outline" class="ingredient__icon"></ion-icon>
+            <span class="meal__description"
+              >100% baby beef, smoked cheese, crispy bacon, tomato, lettuce,
+              arugula, BBQ sauce, potato wedges</span
+            >
+          </div>
+        </div>
+        <div class="meal__container">
+          <div class="meal-img__container">
+            <img
+              alt="image of salad"
+              class="meal__img"
+              src="./photos/pexels-chan-walrus-1059905-min.jpg"
+            />
+          </div>
+          <div class="meal-heading__container">
+            <div class="styling__div-salad">
+              <span class="meal__mark">SALAD</span>
+            </div>
+            <h4>Caprese</h4>
+          </div>
+          <div class="ingrideints__container">
+            <ion-icon
+              name="layers-outline"
+              class="ingredient__icon-green"
+            ></ion-icon>
+            <span class="meal__description"
+              >Mozzarella, tomatoes, basil, extra virgin oil</span
+            >
+          </div>
+        </div>
+        <div class="meal__container">
+          <div class="meal-img__container">
+            <img
+              alt="image of chicken nuggets"
+              class="meal__img"
+              src="./photos/leo-roza-zNqArwc7Hh4-unsplash-min.jpg"
+            />
+          </div>
+          <div class="meal-heading__container">
+            <div class="styling__div">
+              <span class="meal__mark">NUGGETS</span>
+            </div>
+            <h4>Chicken nuggets</h4>
+          </div>
+          <div class="ingrideints__container">
+            <ion-icon name="layers-outline" class="ingredient__icon"></ion-icon>
+            <span class="meal__description">Chicken nuggets + pommes</span>
+          </div>
+        </div>
+        <div class="meal__container">
+          <div class="meal-img__container">
+            <img
+              alt="image of ribs"
+              class="meal__img"
+              src="./photos/pexels-christel-jensen-628777-min.jpg"
+            />
+          </div>
+          <div class="meal-heading__container">
+            <div class="styling__div-salad">
+              <span class="meal__mark">SALAD</span>
+            </div>
+            <h4>Mishada</h4>
+          </div>
+          <div class="ingrideints__container">
+            <ion-icon
+              name="layers-outline"
+              class="ingredient__icon-green"
+            ></ion-icon>
+            <span class="meal__description">Salad mix</span>
+          </div>
+        </div>
+        <div class="meal__container">
+          <div class="meal-img__container">
+            <img
+              alt="image of piantina owner"
+              class="meal__img"
+              src="./photos/photo-1569352304334-6e422cd70ecd-min.jpg"
+            />
+          </div>
+          <div class="meal-heading__container">
+            <div class="styling__div">
+              <span class="meal__mark">RIBS</span>
+            </div>
+            <h4>Slow Ribs</h4>
+          </div>
+          <div class="ingrideints__container">
+            <ion-icon name="layers-outline" class="ingredient__icon"></ion-icon>
+            <span class="meal__description"
+              >Slow cooked pork ribs, BBQ sauce, potato wedges</span
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="about" class="about section">
+      <div class="about__container">
+        <div class="marko-img__container">
+          <img
+            alt="image of pinatina owner"
+            class="marko__img"
+            src="./photos/Marko-removebg-preview.png"
+          />
+        </div>
+        <div class="about-text__container">
+          <h2 class="about-heading">Hello, I am Marko</h2>
+          <p class="about-text">
+            "I want to create memorable moments for my clients and friends"
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="why__us section">
+      <h3 class="dinner align__phone">Do you have dinner plans?</h3>
+      <div class="takeaway">
+        <p>
+          "We've got delicious food, short waiting times and a relaxed vibe –
+          the perfect place for a quick bite. Fine fast food Piantina, a place
+          where you can enjoy amazing dishes, friendly service and a cold drink.
+          Whether you're in search of a quick snack or a full meal, our diner
+          has exactly what you need. Our outdoor seating area comes with a great
+          vibe and relaxed atmosphere, not to mention warmth from our heated
+          terrace on colder evenings. No matter what the weather is like, you
+          can easily relax in our air-conditioned areas."
+        </p>
+      </div>
+      <h3 class="dinner">Your new favourite diner with WiFi</h3>
+      <div class="wifi">
+        <p>
+          "Our tasty fast food is well known for its unique, fresh flavours.
+          You've got to try our juicy burgers along with our thirst-quenching
+          beer or cold beverages. For a tasty snack try our selection of fruit.
+          Take advantage of our free WiFi to share your photos and experiences
+          while you're with us. Our private smoking lounge offers you a escape
+          for when you want to relax and have a smoke."
+        </p>
+      </div>
+      <h3 class="dinner">Make use of our take-away</h3>
+      <div class="make__use">
+        <p>
+          "We look forward to having you! No need to reserve a table, just come
+          by. Want to enjoy our food, but would rather spend the night in? Not
+          to worry, you can pickup your meal for takeaway or take advantage of
+          our delivery service. You can come by any day of the week for a bite,
+          except Sundays."
+        </p>
+      </div>
+    </section>
+    <section id="locations" class="locations__section section">
+      <h2 class="locations__heading">Where are we?</h2>
+      <div class="locations__container">
+        <div class="fazana-location__container">
+          <div class="map__container">
+            <h3 class="location__heading">Piantina Fažana</h3>
+            <iframe
+              title="Piantina Fažana"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2824.8200692260725!2d13.802834542009109!3d44.92699448561149!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x477ccd2ca9541a6b%3A0xbc9ea0de783e865f!2sPiantina%20Fa%C5%BEana!5e0!3m2!1sen!2shr!4v1686730420110!5m2!1sen!2shr"
+              width="600"
+              height="450"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+          <div class="working__hors-title">
+            <h3 class="working-hours__title">Working hours</h3>
+            <ul>
+              <li>Mon <span class="hours__span">09:00 AM - 11:00 PM</span></li>
+              <li>
+                Tue <span class="hours__span tue">09:00 AM - 11:00 PM</span>
+              </li>
+              <li>Wed <span class="hours__span">09:00 AM - 11:00 PM</span></li>
+              <li>
+                Thu <span class="hours__span thu">09:00 AM - 11:00 PM</span>
+              </li>
+              <li>
+                Fri <span class="hours__span fri">09:00 AM - 11:00 PM</span>
+              </li>
+              <li>
+                Sat <span class="hours__span sat">09:00 AM - 12:00 PM</span>
+              </li>
+              <li>
+                Sun <span class="hours__span sun">09:00 AM - 11:00 PM</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="fazana-location__container">
+          <div class="map__container">
+            <h3 class="location__heading">Piantina Pula</h3>
+            <iframe
+              title="Piantina Pula"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3998.8830913665865!2d13.845766982574135!3d44.8696770441259!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x477cd3d10ace08d3%3A0x1374407b0d37588b!2sFine%20fast%20food%20Piantina!5e0!3m2!1sen!2shr!4v1686730989922!5m2!1sen!2shr"
+              width="600"
+              height="450"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+          <div class="working__hors-title">
+            <h3 class="working-hours__title">Working hours</h3>
+            <ul>
+              <li>Mon <span class="hours__span">09:00 AM - 11:00 PM</span></li>
+              <li>
+                Tue <span class="hours__span tue">09:00 AM - 11:00 PM</span>
+              </li>
+              <li>Wed <span class="hours__span">09:00 AM - 11:00 PM</span></li>
+              <li>
+                Thu <span class="hours__span thu">09:00 AM - 11:00 PM</span>
+              </li>
+              <li>
+                Fri <span class="hours__span fri">09:00 AM - 11:00 PM</span>
+              </li>
+              <li>
+                Sat <span class="hours__span sat">09:00 AM - 12:00 PM</span>
+              </li>
+              <li>
+                Sun <span class="hours__span sun">09:00 AM - 11:00 PM</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="contact" class="section__contact section">
+      <div class="socials__container">
+        <div class="social-icons__container">
+          <a href="tel:091-578-7970">
+            <ion-icon class="social__icon" name="call-outline"></ion-icon>
+          </a>
+          <p>Call us <br />+38591578970</p>
+        </div>
+        <div class="social-icons__container">
+          <a href="https://www.facebook.com/piantina.fast.food/">
+            <ion-icon name="logo-facebook" class="social__icon"></ion-icon>
+          </a>
+          <p>Facebook</p>
+        </div>
+        <div class="social-icons__container">
+          <a href="https://www.instagram.com/piantinafinefast/">
+            <ion-icon name="logo-instagram" class="social__icon"></ion-icon>
+          </a>
+          <p>Instagram</p>
+        </div>
+        <div class="social-icons__container">
+          <a href="mailto: lukezzi88@gmail.com">
+            <ion-icon name="mail-outline" class="social__icon"></ion-icon>
+          </a>
+          <p>Email</p>
+        </div>
+        <div class="social-icons__container">
+          <a
+            href="https://www.google.com/maps/dir//Fine+fast+food+Piantina+Zadarska+ul.+1+52100,+Pula/@44.870031,13.8488915,16z/data=!4m8!4m7!1m0!1m5!1m1!1s0x477cd3d10ace08d3:0x1374407b0d37588b!2m2!1d13.8488915!2d44.870031?entry=ttu"
+          >
+            <ion-icon name="location-outline" class="social__icon"></ion-icon>
+          </a>
+          <p>Zadarska ulica 1</p>
+        </div>
+        <div class="social-icons__container">
+          <a
+            href="https://www.google.com/maps/dir//Piantina+Fa%C5%BEana+Ul.+43.+istarske+divizije+7A+52212,+Fa%C5%BEana/@44.9269063,13.8044822,16z/data=!4m5!4m4!1m0!1m2!1m1!1s0x477ccd2ca9541a6b:0xbc9ea0de783e865f"
+          >
+            <ion-icon name="location-outline" class="social__icon"></ion-icon>
+          </a>
+          <p>
+            43.Istarske<br />
+            divizije 7/A
+          </p>
+        </div>
+      </div>
+      <div class="contact__container">
+        <div class="cta">
+          <div class="cta-text-box">
+            <h2 class="heading-secondary">Hungry? Contact us!</h2>
+            <p class="cta-text">
+              Healthy, tasty and hassle-free meals are waiting for you.
+            </p>
+
+            <form class="cta-form" action="#" name="contact" netlify>
+              <div>
+                <label for="full-name">Full Name</label>
+                <input
+                  id="full-name"
+                  type="text"
+                  placeholder="John Smith"
+                  name="name"
+                  required
+                />
+              </div>
+
+              <div>
+                <label for="email">Email address</label>
+                <input
+                  id="email"
+                  type="email"
+                  name="email"
+                  placeholder="me@example.com"
+                  required
+                />
+              </div>
+
+              <div>
+                <label for="select-where">Where did you hear from us?</label>
+                <select name="where[]" multiple id="select-where" required>
+                  <option value="">Please choose one option:</option>
+                  <option value="friends">Friends and family</option>
+                  <option value="youtube">YouTube video</option>
+                  <option value="instagram">Instagram</option>
+                  <option value="facebook">Facebook</option>
+                  <option value="others">Others</option>
+                </select>
+              </div>
+
+              <button type="submit" class="btn__signup">Sign up now</button>
+
+              <!-- <input type="checkbox" />
+              <input type="number" /> -->
+            </form>
+          </div>
+          <div
+            class="cta-img-box"
+            role="img"
+            aria-label="Woman enjoying food"
+          ></div>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <p>Copyright &copy; 2023 by Ivan Mušković. All rights reserved</p>
+    </footer>
+  </body>
+  <script
+    type="module"
+    src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+  ></script>
+  <script
+    nomodule
+    src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+  ></script>
+  <script defer src="script.js"></script>
+</html>
